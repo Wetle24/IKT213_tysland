@@ -13,7 +13,7 @@ output_path = os.path.join("solutions", "camera_outputs.txt")
 with open(output_path, "w") as output_file:
     output_file.write(f"A: fps: {fps}\n")
     output_file.write(f"B: height: {frame_height}\n")
-    output_file.write(f"C: width: {frame_width}\n") 
+    output_file.write(f"C: width: {frame_width}\n")
 
 while True:
     ret, frame = cam.read()

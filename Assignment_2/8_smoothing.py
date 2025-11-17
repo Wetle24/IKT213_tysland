@@ -5,9 +5,9 @@ import os
 def smoothing(image):
     img = cv2.imread(image)
 
-    averaging = cv2.blur(img, (5,5))
-    gaussian = cv2.GaussianBlur(img, (5, 5), cv2.BORDER_DEFAULT)
-    median = cv2.medianBlur(img, 5)
+    averaging = cv2.blur(img, (15,15))
+    gaussian = cv2.GaussianBlur(img, (15, 15), cv2.BORDER_DEFAULT)
+    median = cv2.medianBlur(img, 15)
     
     cv2.imshow("Lena blur", averaging)
     cv2.waitKey(0)
